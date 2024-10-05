@@ -1,0 +1,43 @@
+body {
+    display: flex;
+}
+
+#navbar {
+    width: 20%;
+    position: fixed; /* Keep the navbar fixed on the side */
+    left: 0;
+    top: 0;
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scrolling if necessary */
+    background-color: #eee;
+    padding: 20px;
+}
+
+#main-doc {
+    margin-left: 20%; /* Make room for the fixed navbar */
+    padding: 20px;
+    width: 80%;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    background-color: #ccc;
+}
+
+@media (max-width: 800px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative; /* Static position on small screens */
+    }
+    #main-doc {
+        margin-left: 0;
+        width: 100%;
+    }
+}
